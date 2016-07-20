@@ -1,0 +1,292 @@
+//Variables
+$lightOrange: #fa6900;
+$lightBlues: #69d2e7;
+$lightGrey: #f1f1f1;
+
+$circleRadius: 20px;
+
+// -------start of header-------
+div.container{
+  background-color: $lightBlues;
+  height: 480px;
+  position: relative;
+  img{
+    position: absolute;;
+    top: 40px;
+    left: 100px;
+  }
+  h3{
+    position: absolute;
+    top: 40px;
+    left: 155px;
+  }
+  h5{
+    top: 60px;
+    left: 155px;
+    position: absolute;
+  }
+  div{
+    position: absolute;
+    right:5%;
+    top:5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #1d97af;
+  }
+  h1{
+    position: absolute;
+    top: 24%;
+    left: 42.7%;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+    margin: 0;
+  }
+  span{
+    position: absolute;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: 35%;
+    left: 37.6%;
+    white-space:nowrap;
+  }
+}
+
+//-------end of header-------
+
+// ------- start of section-------
+
+div.container-section{
+  min-height: 300px;
+  width: 850px;
+  background: #fff;
+  position: absolute;
+  border-radius: 20px;
+  left: 14.6%;
+  right: 14.6%;
+  top:-180px;
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  p{
+    text-align: justify;
+    display: inline-block;
+    padding: 0 20.750px 20.750px 20.750px;
+  }
+}
+
+// ------- end of section -------
+
+
+// ------- start of thumbnails -------
+
+ul.thumbnails{
+  position: absolute;
+  top: 200px;
+  width: 850px;
+  left:14.6%;
+  li{
+    float: left;
+  }
+  li:first-child{
+    padding-right: 178px;
+  }
+  li:nth-child(2){
+    padding-right: 178px;
+  }
+}
+
+// ------- end of thumbnails -------
+// ------- start of this thing with orange bg -------
+div.img-menu{
+  position: absolute;
+  height: 475px;
+  width: 1200px;
+  background: $lightOrange;
+  top: 500px;
+  text-align: center;
+  img{
+    margin-top: 91.5px;
+  }
+}
+div.rounded-photo{
+  position: absolute;
+  top: 1000px;
+  max-width: 400px;
+  width: 100%;
+  left: 33.3333%;
+}
+
+// ------- end of this thing with orange bg -------
+
+// ------- start of section with black semi-circle -------
+div.circles{
+  position: absolute;
+  top: 1200px;
+  width: 100px;
+  left: 45.83%;
+  :nth-child(2){
+    margin: 0 15px 0 15px;
+  }
+  div.circle-active{
+    border-radius: 50%;
+    width: $circleRadius;
+    height: $circleRadius;
+    float: left;
+    background-color: $lightBlues;
+  }
+  div.circle{
+    border-radius: 50%;
+    width: $circleRadius;
+    height: $circleRadius;
+    float: left;
+    background-color: $lightOrange;
+  }
+}
+
+div.circles:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+div.container-shaped{
+  position: absolute;
+  top: 1250px;
+  background-color: $lightOrange;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  div{
+    float:left;
+    text-align: justify;
+    padding: 0 20px 0 50px;
+    h3{
+      max-width: 450px;
+      margin-top: 100px;
+    }
+    h4{
+      max-width: 450px;
+    }
+    p{
+      max-width: 450px;
+    }
+  }
+  div.shape-outside{
+    background-color: black;
+    max-width: 600px;
+    width: 100%;
+    float: right;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    }
+}
+div.container-shaped:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+// ------- end of section with black semi-circle -------
+
+// ------- start of section with latest-posts -------
+
+div.container-bottom{
+  max-width: 1200px;
+  width: 100%;
+  max-height: 1000px;
+  position: absolute;
+  top: 1800px;
+  div.left-bot{
+    float: left;
+    max-width: 500px;
+    width: 100%;
+    div.icon{
+      img{
+        display: block;
+        float: left;
+      }
+      h3{
+        float: left;
+        width: 400px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      h5{
+        float: left;
+        width: 400px;
+        text-transform: capitalize;
+      }
+      div.black-box{
+        max-width: 150px;
+        width: 100%;
+        min-height: 50px;
+        background-color: black;
+        float: left;
+        display: inline-block;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      p{
+        display: inline-block;
+        float: right;
+
+      }
+    }
+  }
+  div.right-bot{
+    float: right;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+// ----------- footer ---------
+
+div.footer-container{
+  max-width: 1200px;
+  width: 100%;
+  background-color: $lightBlues;
+  height: 70px;
+  position: absolute;
+  top: 2150px;
+  border-radius: 2%;
+    span:first-child{
+      float: left;
+      color: white;
+      padding-top: 30px;
+      padding-left: 50px;
+      text-transform: capitalize;
+    }
+    span:nth-child(2){
+      float: right;
+      color: white;
+      padding-top: 30px;
+      padding-right: 50px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      float: left;
+      padding-top: 30px;
+      margin-left: 250px;
+    }
+}
+
+div.footer-container:after{
+  display: block;
+  clear: both;
+  content: "";
+}
